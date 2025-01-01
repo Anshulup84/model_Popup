@@ -19,7 +19,7 @@ body {
     /* display: none; */
 }
 
-.popup.open {
+.popup-open .popup {
     /* display: block; */
     transform: scale(1);
     left: 50%;
@@ -36,3 +36,13 @@ body {
     font-family: sans-serif;
 }
 
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.popup-open .overlay {
+    display: block;
+}
